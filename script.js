@@ -65,22 +65,21 @@ function resetar() {
 }
 
 // Função para mostrar a caixa flutuante
-function mostrarCaixaFlutuante() {
-  const caixaFlutuante = document.getElementById('caixa-flutuante');
-  caixaFlutuante.classList.add('mostrar');
-}
-
-// Função para esconder a caixa flutuante
-function esconderCaixaFlutuante() {
-  const caixaFlutuante = document.getElementById('caixa-flutuante');
-  caixaFlutuante.classList.remove('mostrar');
-}
-
 function alternarCaixaFlutuante() {
   const caixaFlutuante = document.getElementById('caixa-flutuante');
-  if (caixaFlutuante.style.display === 'none' || caixaFlutuante.style.display === '') { // Adicionando verificação para o estilo vazio
-    caixaFlutuante.style.display = 'block';
+  if (caixaFlutuante.style.display === 'none' || caixaFlutuante.style.display === '') {
+    exibirCaixaFlutuante(); // Se estiver oculta, exibe
   } else {
-    caixaFlutuante.style.display = 'none';
+    ocultarCaixaFlutuante(); // Se estiver visível, oculta
   }
+}
+
+function exibirCaixaFlutuante() {
+  const caixaFlutuante = document.getElementById('caixa-flutuante');
+  caixaFlutuante.style.display = 'block';
+}
+
+function ocultarCaixaFlutuante() {
+  const caixaFlutuante = document.getElementById('caixa-flutuante');
+  caixaFlutuante.style.display = 'none';
 }
