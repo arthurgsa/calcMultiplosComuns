@@ -217,3 +217,33 @@ hr {
   z-index: 9999; /* Definindo um valor de z-index alto */
   display: none;
 }
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 90%; /* Reduzir a largura do contêiner */
+    margin: 20px auto; /* Margens menores */
+  }
+
+  .input-container {
+    flex-direction: column; /* Alterar a direção do flexbox para empilhar verticalmente */
+  }
+
+  .input-container input[type="text"],
+  .input-container input[type="number"] {
+    width: 100%; /* Definir a largura dos campos de entrada como 100% */
+    margin-bottom: 10px; /* Adicionar um espaçamento inferior menor */
+  }
+
+  .multiplos,
+  .bases {
+    justify-content: center; /* Centralizar os elementos */
+  }
+
+  .botao {
+    margin-top: 20px; /* Adicionar um espaço superior para separar o botão flutuante */
+  }
+
+  .caixa-flutuante {
+    bottom: -160px; /* Ajustar a posição da caixa flutuante */
+  }
+}
