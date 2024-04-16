@@ -241,6 +241,7 @@ hr {
 
   .botao {
     margin-top: 20px; /* Adicionar um espaço superior para separar o botão flutuante */
+padding-bottom: 10px;
   }
 
   .caixa-flutuante {
