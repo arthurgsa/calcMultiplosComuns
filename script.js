@@ -78,5 +78,9 @@ function esconderCaixaFlutuante() {
 
 function alternarCaixaFlutuante() {
   const caixaFlutuante = document.getElementById('caixa-flutuante');
-  caixaFlutuante.style.display = caixaFlutuante.style.display === 'none' ? 'block' : 'none';
+  if (caixaFlutuante.style.display === 'none' || caixaFlutuante.style.display === '') { // Adicionando verificação para o estilo vazio
+    caixaFlutuante.style.display = 'block';
+  } else {
+    caixaFlutuante.style.display = 'none';
+  }
 }
