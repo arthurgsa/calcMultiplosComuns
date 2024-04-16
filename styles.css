@@ -1,0 +1,214 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #191919;
+}
+
+p {
+  text-align: center;
+  color: #333333;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-container input[type="text"],
+.input-container input[type="number"] {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.input-container input[type="text"]:focus,
+.input-container input[type="number"]:focus {
+  border-color: #007bff;
+}
+
+.input-container button {
+  padding: 15px 40px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+  background-color: #45a049;
+}
+
+.bases {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bases span {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 8px 15px;
+  background-color: #ffcc00;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.resultado {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.multiplos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.multiplo {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 8px 15px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.calcular {
+  text-align: center;
+}
+
+.calcular button {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.calcular button:hover {
+  background-color: #0056b3;
+}
+
+.limite-input {
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.limite-input:focus {
+  border-color: #007bff;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-container label {
+  margin-right: 10px;
+}
+
+.limite-input {
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.limite-input:focus {
+  border-color: #007bff;
+}
+
+.rodape {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666666;
+  opacity: 0.7;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* Ajuste a cor e a opacidade conforme desejado */
+  margin: 10px 0; /* Ajuste as margens conforme desejado */
+}
+
+/* CSS para estilizar o botão */
+.botao {
+  padding: 8px 16px;
+  background-color: #f0f0f0; /* Cor mais suave */
+  color: #333; /* Cor do texto mais escura */
+  border: none;
+  border-radius: 5px;
+  font-size: 14px; /* Um pouco menor */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 0 auto; /* Centralizar no container */
+  margin-bottom: 20px;
+  position: relative; /* Adicione esta linha */
+}
+
+.botao:hover .caixa-flutuante {
+  display: block;
+}
+
+/* CSS atualizado para a caixa flutuante */
+.caixa-flutuante {
+  position: absolute;
+  bottom: -170px; /* Ajuste conforme necessário */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 5px;
+  z-index: 9999;
+  display: none;
+}

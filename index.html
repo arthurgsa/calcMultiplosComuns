@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Múltiplos em Comum | Arthur Araujo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Múltiplos Comuns</h1>
+    <p>Insira os números base e um intervalo de números para calcular os múltiplos comuns.</p>
+    <hr>
+    <br>
+    <br>
+    <div class="form">
+      <div class="input-container">
+        <input type="text" id="base" onkeydown="adicionarBase(event)" placeholder="Adicionar Base">
+        <button onclick="adicionarBase()">Adicionar</button>
+      </div>
+      <div class="bases" id="bases"></div>
+      <div class="input-container">
+        <label for="limite-inferior">Limite Inferior:</label>
+        <input type="number" id="limite-inferior" class="limite-input" value="1">
+      </div>
+      <div class="input-container">
+        <label for="limite-superior">Limite Superior:</label>
+        <input type="number" id="limite-superior" class="limite-input" value="1000">
+      </div>
+      <div class="calcular">
+        <button onclick="calcularMultiplos()">Calcular Múltiplos Comuns</button>
+        <button onclick="resetar()">Resetar</button>
+      </div>
+    </div>
+    <div id="resultado" class="resultado">
+      <div class="multiplos" id="multiplos"></div>
+    </div>
+    <footer class="rodape">Feito por Arthur Araujo</footer>
+    <div class="caixa-flutuante" id="caixa-flutuante">Inspirado por uma aula sobre múltiplos e divisores desenvolvi esse simples site para facilitar confirmação de algumas técnicas usadas para descobrir e calcular múltiplos comuns entre vários números.</div>
+    <button onclick="alternarCaixaFlutuante()" class="botao">O que é esse site?</button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
